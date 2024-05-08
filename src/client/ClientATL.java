@@ -15,7 +15,7 @@ public class ClientATL {
 
             String receivedMsg = reader.readLine();
 
-            String sendMsg2 = "AUTH xxx";
+            String sendMsg2 = "AUTH 46237526";
             writer.println(sendMsg2);
 
             String receivedMsg2 = reader.readLine();
