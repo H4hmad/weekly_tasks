@@ -1,0 +1,206 @@
+{
+  "Turnaround time": {
+    "config12-long-med.xml": {
+      "fc": 116814
+    },
+    "config12-med-alt.xml": {
+      "fc": 89658
+    },
+    "config12-med-med.xml": {
+      "fc": 110911
+    },
+    "config12-short-med.xml": {
+      "fc": 16015
+    },
+    "config16-long-high.xml": {
+      "fc": 615419
+    },
+    "config16-long-med.xml": {
+      "fc": 457374
+    },
+    "config16-med-high.xml": {
+      "fc": 609403
+    },
+    "config16-short-high.xml": {
+      "fc": 587912
+    },
+    "config16-short-med.xml": {
+      "fc": 463824
+    },
+    "config40-long-high.xml": {
+      "fc": 489452
+    },
+    "config40-long-med.xml": {
+      "fc": 268567
+    },
+    "config40-med-high.xml": {
+      "fc": 239755
+    },
+    "config40-med-med.xml": {
+      "fc": 141732
+    },
+    "config40-short-high.xml": {
+      "fc": 220944
+    },
+    "config40-short-med.xml": {
+      "fc": 174394
+    },
+    "extra01.ext.xml": {
+      "fc": 783647
+    },
+    "extra02.ext.xml": {
+      "fc": 329094
+    },
+    "extra03.ext.xml": {
+      "fc": 932554
+    },
+    "extra04.ext.xml": {
+      "fc": 570209
+    },
+    "extra05.ext.xml": {
+      "fc": 374249
+    },
+    "extra06.ext.xml": {
+      "fc": 5892
+    },
+    "extra07.ext.xml": {
+      "fc": 162832
+    }
+  },
+  "Resource utilisation": {
+    "config12-long-med.xml": {
+      "fc": 100.0
+    },
+    "config12-med-alt.xml": {
+      "fc": 98.41
+    },
+    "config12-med-med.xml": {
+      "fc": 100.0
+    },
+    "config12-short-med.xml": {
+      "fc": 100.0
+    },
+    "config16-long-high.xml": {
+      "fc": 95.73
+    },
+    "config16-long-med.xml": {
+      "fc": 90.22
+    },
+    "config16-med-high.xml": {
+      "fc": 92.9
+    },
+    "config16-short-high.xml": {
+      "fc": 91.36
+    },
+    "config16-short-med.xml": {
+      "fc": 88.37
+    },
+    "config40-long-high.xml": {
+      "fc": 100.0
+    },
+    "config40-long-med.xml": {
+      "fc": 100.0
+    },
+    "config40-med-high.xml": {
+      "fc": 100.0
+    },
+    "config40-med-med.xml": {
+      "fc": 100.0
+    },
+    "config40-short-high.xml": {
+      "fc": 100.0
+    },
+    "config40-short-med.xml": {
+      "fc": 100.0
+    },
+    "extra01.ext.xml": {
+      "fc": 100.0
+    },
+    "extra02.ext.xml": {
+      "fc": 90.91
+    },
+    "extra03.ext.xml": {
+      "fc": 93.93
+    },
+    "extra04.ext.xml": {
+      "fc": 100.0
+    },
+    "extra05.ext.xml": {
+      "fc": 100.0
+    },
+    "extra06.ext.xml": {
+      "fc": 76.8
+    },
+    "extra07.ext.xml": {
+      "fc": 88.56
+    }
+  },
+  "Total rental cost": {
+    "config12-long-med.xml": {
+      "fc": 78.09
+    },
+    "config12-med-alt.xml": {
+      "fc": 66.44
+    },
+    "config12-med-med.xml": {
+      "fc": 74.66
+    },
+    "config12-short-med.xml": {
+      "fc": 11.14
+    },
+    "config16-long-high.xml": {
+      "fc": 477.25
+    },
+    "config16-long-med.xml": {
+      "fc": 417.64
+    },
+    "config16-med-high.xml": {
+      "fc": 477.74
+    },
+    "config16-short-high.xml": {
+      "fc": 481.01
+    },
+    "config16-short-med.xml": {
+      "fc": 404.17
+    },
+    "config40-long-high.xml": {
+      "fc": 951.07
+    },
+    "config40-long-med.xml": {
+      "fc": 627.51
+    },
+    "config40-med-high.xml": {
+      "fc": 450.57
+    },
+    "config40-med-med.xml": {
+      "fc": 296.0
+    },
+    "config40-short-high.xml": {
+      "fc": 468.88
+    },
+    "config40-short-med.xml": {
+      "fc": 381.87
+    },
+    "extra01.ext.xml": {
+      "fc": 634.85
+    },
+    "extra02.ext.xml": {
+      "fc": 87.99
+    },
+    "extra03.ext.xml": {
+      "fc": 594.86
+    },
+    "extra04.ext.xml": {
+      "fc": 357.5
+    },
+    "extra05.ext.xml": {
+      "fc": 1093.94
+    },
+    "extra06.ext.xml": {
+      "fc": 77.16
+    },
+    "extra07.ext.xml": {
+      "fc": 202.28
+    }
+  }
+}
