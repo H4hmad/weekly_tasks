@@ -12,22 +12,21 @@ public class ClientInnovative {
       BufferedReader reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
       sendMessage(writer, "HELO");
-      String receivedMsg = receiveMessage(reader);
+      String greetingsResponse = receiveMessage(reader);
 
       sendMessage(writer, "AUTH 46237526");
-      String receivedMsg2 = receiveMessage(reader);
+      String authenticationResponse = receiveMessage(reader);
 
       while (true) {
-        String sendMsg7 = "REDY";
-        writer.println(sendMsg7);
-        String receivedMsg12 = receiveMessage(reader);
+        sendMessage(writer, "REDY");
+        String jobDetails = receiveMessage(reader);
 
-        if (receivedMsg12.startsWith("JOBN")) {
-          processJob(reader, writer, receivedMsg12);
-        } else if (receivedMsg12.startsWith("JCPL")) {
+        if (jobDetails.startsWith("JOBN")) {
+          processJob(reader, writer, jobDetails);
+        } else if (jobDetails.startsWith("JCPL")) {
           sendMessage(writer, "REDY");
           receiveMessage(reader);
-        } else if (receivedMsg12.startsWith("NONE")) {
+        } else if (jobDetails.startsWith("NONE")) {
           sendMessage(writer, "QUIT");
           break;
         } else {
@@ -49,11 +48,11 @@ public class ClientInnovative {
     int requiredMemory = Integer.parseInt(parts[5]);
 
     sendMessage(writer, "GETS Capable " + requiredCores + " " + requiredRAM + " " + requiredMemory);
-    String receivedMsg = receiveMessage(reader);
-    String[] partsTemp = receivedMsg.split(" ");
+    String capableServers = receiveMessage(reader);
+    String[] partsTemp = capableServers.split(" ");
     int number = Integer.parseInt(partsTemp[1]);
     String[] bestFit = findBestFit(reader, writer, number);
-    String receivedMsgx = receiveMessage(reader);
+    String acknowledgement = receiveMessage(reader);
     sendMessage(writer, "SCHD " + jobID + " " + bestFit[0] + " " + bestFit[1]);
     receiveMessage(reader);
   }
@@ -64,8 +63,8 @@ public class ClientInnovative {
 
     sendMessage(writer, "OK");
     for (int i = 0; i < number; i++) {
-      String receivedMsg = receiveMessage(reader);
-      String[] parts = receivedMsg.split(" ");
+      String serverDetails = receiveMessage(reader);
+      String[] parts = serverDetails.split(" ");
       int availableCores = Integer.parseInt(parts[4]);
       if (availableCores > maxCores) {
         maxCores = availableCores;
