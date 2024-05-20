@@ -1,7 +1,7 @@
 import java.net.*;
 import java.io.*;
 
-public class ClientTest {
+public class ClientLRR {
   public static void main(String[] args) {
     try {
       int port = 57799;
@@ -15,7 +15,7 @@ public class ClientTest {
 
       String receivedMsg = reader.readLine();
 
-      String sendMsg2 = "AUTH xxx";
+      String sendMsg2 = "AUTH 46237526";
       writer.println(sendMsg2);
 
       String receivedMsg2 = reader.readLine();
@@ -47,14 +47,11 @@ public class ClientTest {
           String sendMsg4 = "OK";
           writer.println(sendMsg4);
           int maxCores = Integer.MIN_VALUE;
-          int minEstRuntime = Integer.MAX_VALUE;
           for (int i = 0; i < number; i++) {
             String receivedMsg5 = reader.readLine().trim();
             partstemp = receivedMsg5.split(" ");
             int availableCores = Integer.parseInt(partstemp[4]);
-            int estRuntime = Integer.parseInt(partstemp[6]);
-            if (estRuntime < minEstRuntime || (estRuntime == minEstRuntime && availableCores > maxCores)) {
-              minEstRuntime = estRuntime;
+            if (availableCores > maxCores) {
               maxCores = availableCores;
               cores = Integer.parseInt(partstemp[4]);
               id = Integer.parseInt(partstemp[1]);
